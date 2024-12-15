@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <script defer src="../JS/desafios.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <title>Acceso bloqueado</title>
+</head>
+<body id="body4">
+    <div class="contenedor">
+        <h1>Reto 4: El acceso bloqueado de Papá Noel</h1>
+        <p>
+            Con la subred configurada, Papá Noel intenta acceder a la base de datos de los niños y sus regalos en un servidor externo. 
+            Pero aparece un nuevo mensaje de error:
+        </p>
+        <br>
+        <p>
+            "¡ACCESO DENEGADO! El firewall ha bloqueado las conexiones salientes. <br>
+            Para garantizar la seguridad de la información de los niños, debes configurar las reglas adecuadas para permitir el acceso."
+            Necesita que lo ayudes respondiendo a esta pregunta:<br><br>
+            ¿Qué configuraciones debe realizar Papá Noel para solucionar este problema y conectarse de manera segura a los servidores externos?
+        </p>
+        <br>
+        <p>
+            Pistas: <br><br>
+            - El tráfico permitido debe ser solo hacia los servidores de la base de datos ubicados en la red externa. <br>
+            - Papá necesita traducir las direcciones IP de su red interna para que puedan comunicarse con los servidores 
+            externos utilizando una única dirección pública.
+        </p>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="cuartoLink" name="respuesta" required placeholder="Escribe la respuesta" />
+            <button class="btn">Enviar respuesta</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            inicializarDesafio(
+                'formularioDesafio',        
+                'access list extendida, nat y pat',                  
+                '¡Reto 4 completado! El próximo reto está detrás de la espalda de Skywalker.' 
+            );
+        });
+    </script>
+</body>
+</html>

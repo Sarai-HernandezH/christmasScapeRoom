@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <script defer src="../JS/desafios.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <title>Descifra la contraseña</title>
+</head>
+<body id="body5">
+    <div class="contenedor">
+        <h1>Reto 5: Mensaje oculto </h1>
+        <p>
+            Cuando Papá Noel entra a la base de datos se da cuenta de que el Grinch ha logrado meter sus malvadas manos en la contraseña de acceso a la lista, 
+            ayúdanos a descifrar el mensaje, que ha dejado para Papa Noel, para encontrar la nueva contraseña: <br> <br>
+            “querido papá noel, nunca Imaginé que podría ser tan fácil arruinar tu preciada navidad, los renos no lograrán Seguirme, 
+            y mientras tú buscas desesperado, yo liberaré toda la frustacioón acumulada de años de ver a los demás felices, si crees que puedes atraparme, 
+            Solo perderás tiempo, porque esta vez el grinch gana. ”
+        </p>
+    <br>
+    <p>
+        Pistas sobre el cifrado: <br><br>
+        La contraseña está oculta dentro de la carta del Grinch a Papá Noel.<br>
+    </p>
+<br>
+    <p>
+        ¿Cuál es la contraseña que ha puesto el Grinch?
+    </p>
+<br>
+    <form action="" class="formularioDesafio">
+        <input type="text" id="sextoLink" name="respuesta" required placeholder="Escribe la respuesta" />
+        <button class="btn">Enviar respuesta</button>
+    </form>
+</div>
+<script>
+    document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        inicializarDesafio(
+            'formularioDesafio',        
+            'nunca lograran atraparme',                  
+            '¡Reto 5 completado! El próximo reto está debajo del bolso de conejo.' 
+        );
+    });
+</script>
+</body>
+</html>

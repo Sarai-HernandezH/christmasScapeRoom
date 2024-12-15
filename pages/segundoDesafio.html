@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <script defer src="../JS/desafios.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <title>Restaura el sistema</title>
+</head>
+<body id="body2">
+    <div class="contenedor">
+        <h1>Reto 2: Hora de restaurar el sistema</h1>
+        <p>Después de haber neutralizado el ataque del Grinch y haber conseguido acceder al ordenador de Papá Noel, te das cuenta de que la información crucial del sistema está dañada. 
+            Papá Noel explica que, por suerte, tiene un respaldo de seguridad para restaurar los datos y poner en marcha la producción de juguetes a tiempo. 
+            Sin embargo, hay un pequeño problema: no puede recordar exactamente cómo acceder a la copia de seguridad.
+            En la pantalla del ordenador de Papá Noel aparece un mensaje de advertencia, que dice:
+        </p>
+        <br>
+        <p>
+            Mensaje del Sistema: <br>
+
+            "Los datos originales han sido corrompidos. No te preocupes, tienes una copia de seguridad. 
+            El problema es que la copia de seguridad está distribuida en múltiples unidades de almacenamiento para protegerte contra fallos. 
+            Para acceder y restaurar la información, es necesario identificar el tipo de estructura de respaldo utilizada. 
+            Aquí tienes algunas pistas sobre cómo funciona el sistema de respaldo de Papá Noel."<br><br>
+            1. Redundancia: Este sistema utiliza al menos tres discos duros.
+            <br>
+            2. Paridad: La información en los discos no se almacena de manera idéntica. En su lugar, una parte de la información se distribuye en bloques de paridad. 
+            <br>
+            3. Distribución de Datos: La información no está guardada de manera centralizada en un solo disco. 
+            Se distribuye de manera equilibrada en todos los discos involucrados en el proceso.
+            <br>
+            4. Alto Rendimiento y Fiabilidad: Este sistema está diseñado para ofrecer alta disponibilidad, 
+            por lo que el rendimiento de la restauración de los datos debería ser relativamente rápido.
+        </p>
+        <br>
+        <p>
+            ¿Qué tipo de configuración se necesita para que los datos puedan estar accesibles?
+        </p>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="segundoLink" name="respuesta" required placeholder="Escribe la respuesta" />
+            <button class="btn">Enviar respuesta</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            inicializarDesafio(
+                'formularioDesafio',       
+                'raid 5',                   
+                '¡Reto 2 completado! El próximo reto está debajo del decimo teclado contando de izquierda a derecha.' 
+            );
+        });
+    </script>
+</body>
+</html>

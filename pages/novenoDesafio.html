@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <title>Escribe una función</title>
+</head>
+<body id="body9">
+    <div class="contenedor">
+        <h1>Reto 9: Calcular la cantidad de niños</h1>
+        <p>Papá Noel está listo para enviar los regalos a todos los niños, pero no sabe cuántos enviar. 
+            Ayudale a hacer una aproximación del número de regalos con un pequeño programa.
+        </p>    
+        <br>
+        <p>Introduce una función en JavaScript que devuelva un array con las potencias de 2, desde 2⁰ hasta 2ⁿ⁻¹, para un número entero positivo <code>n</code>. Por ejemplo, <code>TuFuncion(4)</code> debería devolver <code>[1, 2, 4, 8]</code>.</p>
+        <form action="" class="formularioDesafio"><br>
+        <textarea rows="10" cols="143" class="textarea_noveno" id="functionInput" placeholder="Escribe aquí tu código"></textarea>
+        <button class="btn" type="button" onclick="validateFunction()">Enviar respuesta</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function mensaje_error(){
+            // Mostrar error personalizado
+            let errorContainer = document.createElement('div');
+                errorContainer.style.position = 'fixed';
+                errorContainer.style.top = '40%';
+                errorContainer.style.width = '100%';
+                errorContainer.style.textAlign = 'center';
+                errorContainer.style.backgroundColor = 'rgba(255, 0, 0, 0.8)';
+                errorContainer.style.color = 'white';
+                errorContainer.style.padding = '20px';
+                errorContainer.style.zIndex = '1000';
+
+                let errorImage = document.createElement('img');
+                errorImage.src = '../imgs/error.jpg';
+                errorImage.alt = 'Te has equivocado';
+                errorImage.style.width = '300px';
+                errorImage.style.marginBottom = '10px';
+
+                let errorMessage = document.createElement('p');
+                errorMessage.textContent = 'Te has equivocado, intenta de nuevo';
+                errorMessage.style.fontSize = '20px';
+
+                errorContainer.appendChild(errorImage);
+                errorContainer.appendChild(errorMessage);
+                document.body.appendChild(errorContainer);
+
+                // Eliminar el contenedor después de 5 segundos
+                setTimeout(() => {
+                    document.body.removeChild(errorContainer);
+                }, 2000);
+        }
+        function mensaje_felicidades() {
+    let felicidadesContainer = document.createElement('div');
+    felicidadesContainer.style.position = 'fixed';
+    felicidadesContainer.style.top = '40%';
+    felicidadesContainer.style.width = '100%';
+    felicidadesContainer.style.textAlign = 'center';
+    felicidadesContainer.style.backgroundColor = 'rgba(102, 210, 102, 1)';
+    felicidadesContainer.style.color = 'white';
+    felicidadesContainer.style.padding = '20px';
+    felicidadesContainer.style.zIndex = '1000';
+
+    let felicidadesImage = document.createElement('img');
+    felicidadesImage.src = '../imgs/acierto.jpg';
+    felicidadesImage.alt = '¡Felicidades!';
+    felicidadesImage.style.width = '300px';
+    felicidadesImage.style.marginBottom = '10px';
+
+    let felicidadesMessage = document.createElement('p');
+    felicidadesMessage.textContent = '¡Felicidades, has resuelto el reto 9 correctamente! El QR para el último reto esta debajo de la silla de Papá Noel.';
+    felicidadesMessage.style.fontSize = '20px';
+
+    felicidadesContainer.appendChild(felicidadesImage);
+    felicidadesContainer.appendChild(felicidadesMessage);
+    document.body.appendChild(felicidadesContainer);
+
+    // Quitar el mensaje después de 5 segundos
+    setTimeout(() => {
+        document.body.removeChild(felicidadesContainer);
+    }, 5000);
+}
+        function validateFunction() {
+            const userFunctionText = document.getElementById('functionInput').value;
+            const resultDiv = document.getElementById('result');
+            
+            resultDiv.textContent = '';
+            resultDiv.className = 'result';
+
+            try {
+                const userFunction = new Function(`return (${userFunctionText})`)();
+
+                const testCases = [
+                    { input: 1, expected: [1] },
+                    { input: 2, expected: [1, 2] },
+                    { input: 4, expected: [1, 2, 4, 8] },
+                    { input: 5, expected: [1, 2, 4, 8, 16] }
+                ];
+
+                let allTestsPass = true;
+
+                for (const test of testCases) {
+                    const output = userFunction(test.input);
+                    if (!Array.isArray(output) || output.length !== test.expected.length || !output.every((v, i) => v === test.expected[i])) {
+                        allTestsPass = false;
+                        mensaje_error()
+                    }
+                }
+
+                if (allTestsPass) {
+                    mensaje_felicidades()
+                } else {
+                    mensaje_error()
+                }
+            } catch (e) {
+                mensaje_error()
+            }
+        }
+    </script>
+</body>
+</html>

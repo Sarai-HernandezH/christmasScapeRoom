@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <script defer src="../JS/desafios.js"></script>
+    <title>Error en HTML</title>
+</head>
+<body id="body7">
+    <div class="contenedor7">
+        <h1>Reto 7: El Error en el Código HTML </h1>
+        <p>
+            Con la base de datos arreglada y las direcciones de los niños ahora únicas, 
+            <br>Santa está listo para proceder con la generación de las estampas para el envío de los regalos. 
+            Sin embargo, al ejecutar el código de la página que genera las estampas, 
+            <br>Santa se da cuenta de que algo no está funcionando: las estampas no se están mostrando.
+        </p>
+        <br>
+        <p>
+            "¡Oh no! Parece que algo está mal con el código HTML, pero no puedo encontrar el error. Ayúdame a revisarlo para que los regalos se envíen correctamente."
+            <br>
+            <p id="quintoP">&lt;!DOCTYPE html&gt;<br>
+                &lt;html lang=&quot;es&quot;&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                &nbsp;&lt;meta:name=;viewport&quot;content=&quot;width=device-width,initial-scale=1.0&quot;&gt;<br>
+                &nbsp;&lt;title&gt;Generador de Estampas para Envío de Regalos de Navidad&lt;/title&gt;<br>
+                &nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;estilos.css&quot;&gt;<br>
+                &nbsp;&lt;script src=&quot;funciones.js&quot;&gt;&lt;/script&gt;<br>
+                &nbsp;&lt;/head&gt;<br>
+                &nbsp;&lt;body&gt;<br>
+                &nbsp;&lt;header&gt;<br>
+                &nbsp;&lt;h1&gt;Bienvenido al Generador de Estampas de Navidad&lt;/h1&gt;<br>
+                &nbsp;&lt;nav&gt;<br>
+                &nbsp;&lt;ul&gt;<br>
+                &nbsp;li&gt;&lt;a href=&quot;#inicio&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;li&gt;&lt;a href=&quot;#informacion&quot;&gt;Información&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;li&gt;&lt;a href=&quot;#contacto&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&lt;/ul&gt;<br>
+                &nbsp;&lt;/nav&gt;<br>
+                &nbsp;&lt;/header&gt;<br>
+                &nbsp;&lt;main&gt;<br>
+                &nbsp;&lt;section id=&quot;inicio&quot;&gt;<br>
+                &nbsp;&lt;h2&gt;Generador de Estampas&lt;/h2&gt;<br>
+                &nbsp;&lt;p&gt;Genera las estampas para el envío de los regalos de Navidad a los niños. Cada regalo tendrá su propia estampa con el logo oficial de Santa Claus.&lt;/p&gt;<br>
+                &nbsp;&lt;div class=&quot;estampa-container&quot;&gt;<br>
+                &nbsp;&lt;h3&gt;Estampa de Envío&lt;/h3&gt;<br>
+                &nbsp;&lt;img sc=&quot;imagenes/estampas_enviosN1.jpg&quot; alt=&quot;Estampa de Navidad&quot; width=&quot;250&quot; height=&quot;250&quot;&gt;<br>
+                &nbsp;&lt;/div&gt;<br>
+                &nbsp;&lt;/section&gt;<br>
+                &nbsp;&lt;section id=&quot;informacion&quot;&gt;<br>
+                &nbsp;&lt;h2&gt;Información sobre la Estampa&lt;/h2&gt;<br>
+                &nbsp;&lt;p&gt;La estampa para cada niño debe tener el tamaño adecuado y la imagen de los regalos. <br>Debe estar clara y legible para los sistemas automáticos de distribución.&lt;/p&gt;<br>
+                &nbsp;&lt;img sc=&quot;imagenes/estampas_enviosN2.jpg&quot; alt=&quot;Est_Navidad&quot;&gt;<br>
+                &nbsp;&lt;/section&gt;<br>
+                &nbsp;&lt;footer&gt;<br>
+                &nbsp;&lt;p&gt;&copy; 2024 Santa Claus Enterprises. Todos los derechos reservados.&lt;/p&gt;<br>
+                &nbsp;&lt;p&gt;Diseño por el equipo de la Fundación Navidad.&lt;/p&gt;<br>
+                &nbsp;&lt;/footer&gt;<br>
+                &nbsp;&lt;/main&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;                
+        </p>
+        <br>
+        <p>
+            ¿Qué error está impidiendo que la estampa de Navidad se cargue correctamente en el código HTML?
+        </p>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="quintoLink" name="respuesta" required placeholder="Escribe la respuesta" />
+            <button class="btn">Enviar respuesta</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            inicializarDesafio(
+                'formularioDesafio',        
+                'src',                  
+                '¡Reto 7 completado! Para obtener el código QR del próximo reto grita "Ill I want for christmas is you" y vendrá a ti.' 
+            );
+        });
+    </script>
+</body>
+</html>

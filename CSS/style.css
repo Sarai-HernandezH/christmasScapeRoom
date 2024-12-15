@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#body1 {
+    background-image: url("../imgs/grinch.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#body2{
+    background-image: url("../imgs/grinch2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#body3{
+    background-image: url("../imgs/grinch2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#body4{
+    background-image: url("../imgs/grinch3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#body5{
+    background-image: url("../imgs/grinch5.jpg");
+    background-size: cover;
+}
+#body6{
+    background-image: url("../imgs/grinch6.png");
+    background-size: cover; 
+}
+#body7{
+    background-image: url("../imgs/grinch7a.jpg");
+    background-size: cover; 
+}
+#body8{
+    background-image: url("../imgs/grinch8.png");
+    background-size: cover; 
+}
+#body9{
+    background-image: url("../imgs/grinch8.jpg");
+    background-size: cover; 
+}
+#body10{
+    background-image: url("../imgs/grinch7.jpg");
+    background-size: contain; 
+}
+h1{
+    font-family: 'Christmas   Classica', sans-serif;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    font-size:2.25rem;
+    text-shadow: 2px 2px black;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#quintoP{
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+.contenedor {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(8px);
+	max-width: 90%;
+	width: 70%;
+	margin-top: 3%;
+    margin-left: 15%;
+}
+.contenedor7 {
+    max-width: 100%;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 2px solid rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(20px);
+    word-wrap: break-word;
+    overflow-x:hidden;
+}
+
+.formularioDesafio input[type='text'] {
+	padding: 20px;
+	border: none;
+	background: #fff;
+	width: 97%;
+	border-radius: 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.formularioDesafio .btn {
+	width: 100%;
+	border: none;
+	background: rgb(33, 139, 44);
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.formularioDesafio .btn:hover {
+	background: #d6160c;
+    cursor: grab;
+}
+
+.qrCode {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+.fotos{
+    width: 75%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    text-decoration: none;
+    margin-bottom: 25%;
+}
+.fotosDecimo{
+    height: 100%;
+    width: 70%;
+    padding: 5%;
+    background-color: black;
+    border-radius: 5%;
+}
+@media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #body1{
+        background-image: url("../imgsMovil/grinch12.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body2{
+        background-image: url("../imgsMovil/grinch1.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body3{
+        background-image: url("../imgsMovil/grinch3.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body4{
+        background-image: url("../imgsMovil/grinch7.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body5{
+        background-image: url("../imgsMovil/grinch5.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body6{
+        background-image: url("../imgsMovil/grinch6.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body7{
+        background-image: url("../imgsMovil/grinch7.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body8{
+        background-image: url("../imgsMovil/grinch8.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body9{
+        background-image: url("../imgsMovil/grinch9.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #body10{
+        background-image: url("../imgsMovil/grinch10.jpg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .contenedor {
+        max-width: 70%;
+        width: 70%;
+        margin-top: 10%;
+        margin-left: 15%;
+        margin-bottom: 10%;
+    }
+    .contenedor7 {
+        max-width: 100%;
+        width: 80%;
+        margin-left: 8%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        border: 2px solid rgba(255, 255, 255, 0.185);
+        backdrop-filter: blur(10px);
+        word-wrap: break-word;
+        overflow-x:hidden;
+    }
+    #quintoP{
+        font-family:'Times New Roman', Times, serif;
+        text-align: justify;
+        font-weight: bolder;
+        font-size: 1rem;
+        border-radius: 5px;
+        padding: 2px;
+    }
+    h1{
+        font-family: 'Christmas   Classica', sans-serif;
+        font-size:1.25rem;
+        color: white;
+        text-shadow: 2px 2px black;
+        text-align: center;
+    }
+    p{
+        font-family:'Times New Roman', Times, serif;
+        text-align: justify;
+        font-weight: bolder;
+        font-size: 1rem;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    button{
+        background-color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: red;
+        width: 50%;
+        height: 50%;
+        border-radius: 5px;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+    pre {
+        border-radius: 5px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 1rem;
+        color: white;
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-align: start;
+    }
+    .textarea_noveno {
+        margin-top: 5%;
+        width: 100%;
+        height: 100%;
+        border: none;
+        resize: none; 
+        box-sizing: border-box;
+    }
+    .formularioDesafio .btn {
+        width: 80%;
+        border: none;
+        background: rgb(33, 139, 44);
+        color: #fff;
+        cursor: pointer;
+        padding: 5%;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 10%;
+    }
+    .formularioDesafio .btn:hover {
+        background: #d6160c;
+        cursor: grab;
+    }
+    .formularioDesafio input[type='text'] {
+        padding: 5%;
+        border: none;
+        background: #fff;
+        width: 80%;
+        border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        font-size: 1rem;
+        margin-bottom: 5%;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .textarea_noveno {
+        width: 100%;
+        height: 100%;
+        border: none;
+        resize: none; 
+        box-sizing: border-box;
+    }
+    
+
+}

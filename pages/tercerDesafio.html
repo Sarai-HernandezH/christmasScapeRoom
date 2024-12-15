@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <script defer src="../JS/desafios.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <title>Conecta a la Red</title>
+</head>
+<body id="body3">
+    <div class="contenedor">
+        <h1>Reto 3: Conecta a la Red correcta</h1>
+        <p>
+            Una vez que la información se ha restaurado, Papá Noel se da cuenta de que aún no puede conectar su ordenador a la red.
+            Aparece un mensaje en la pantalla:
+        </p>
+        <br>
+        <p>
+            "¡ERROR! No se puede conectar a la red. La subred de esta máquina no coincide con la red principal. 
+            Para continuar, necesito que ingreses la subred correcta. ¡Rápido, el tiempo corre y los regalos deben ser entregados a tiempo!"
+        </p>
+        <br>
+        <p>
+            Pistas: <br><br>
+            - Papá Noel se da cuenta de que su dirección IP es 192.168.10.50 Él recuerda que está trabajando en una red interna, pero no puede recordar qué subred está utilizando exactamente.<br><br>
+            - Afortunadamente, tiene una pista. La red que usa está configurada con una máscara de subred /14, que le permite tener un gran rango de direcciones IP para la red interna.<br><br>
+            - Papá Noel te pide ayuda para calcular cuál es la mascara correcta de la subred mencionada, para que pueda reconectar su sistema y comenzar su misión a tiempo.<br><br>
+            La respuesta debe ser en código binario.
+        </p>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="tercerLink" name="respuesta" required placeholder="Escribe la respuesta" />
+            <button class="btn">Enviar respuesta</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            inicializarDesafio(
+                'formularioDesafio',        
+                '11111111.11111100.00000000.00000000',                  
+                '¡Reto 3 completado! el próximo reto está debajo de la útlima mesa a la derecha.' 
+            );
+        });
+    </script>
+</body>
+</html>

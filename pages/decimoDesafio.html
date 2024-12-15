@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <script defer src="../JS/desafios.js"></script>
+    <title>You are trapped</title>
+</head>
+<body id="body10">
+    <div class="contenedor">
+        <h1>Last Challenge! Grinch's Trap</h1>
+        <p>You've fallen into the Grinch's trap! <br>To escape and save Christmas,
+            you'll need to decipher the secret code with the help of the images below.<br> 
+            Quick reminder... Time is ticking!
+        </p>
+        <br>
+        <div class="fotos">
+            <img class="fotosDecimo" src="../imgsReto10/1.jpg" alt="Image 1">
+            <img class="fotosDecimo" src="../imgsReto10/2.jpg" alt="Image 2">
+            <img class="fotosDecimo" src="../imgsReto10/3.png" alt="Image 3">
+            <img class="fotosDecimo" src="../imgsReto10/4.png" alt="Image 4">
+            <img class="fotosDecimo" src="../imgsReto10/5.png" alt="Image 5">
+            <img class="fotosDecimo" src="../imgsReto10/6.jpg" alt="Image 6">
+            <img class="fotosDecimo" src="../imgsReto10/7.jpeg" alt="Image 7">
+            <img class="fotosDecimo" src="../imgsReto10/8.jpg" alt="Image 8">
+            <img class="fotosDecimo" src="../imgsReto10/9.png" alt="Image 9" >
+            <img class="fotosDecimo" src="../imgsReto10/10.png" alt="Image 10">
+            <img class="fotosDecimo" src="../imgsReto10/11.jpg" alt="Image 11">
+            <img class="fotosDecimo" src="../imgsReto10/12.jpg" alt="Image 12">
+            <img class="fotosDecimo" src="../imgsReto10/13.jpg" alt="Image 13">
+            <img class="fotosDecimo" src="../imgsReto10/14.jpg" alt="Image 14">
+    </div>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="decimoLink" name="respuesta" required placeholder="Type your answer here" />
+            <button class="btn">Submit your answer</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            inicializarDesafio(
+                'formularioDesafio',        
+                'happy christmas',                  
+                '¡Reto 10 completado! Felicidades haz salvado la Navidad!.' 
+            );
+        });
+    </script>
+</body>
+</html>

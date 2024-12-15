@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <script defer src="../JS/desafios.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <title>Encuentra el error en JS</title>
+</head>
+<body id="body8">
+    <div class="contenedor">
+        <h1>Reto 8: El código defectuoso </h1>
+        <p>
+            Papá intenta ejecutar el programa que confirma el envío de los regalos, pero recibe un error inesperado en la consola. <br>
+            El mensaje es el siguiente: <br> <br>
+            "TypeError: No se puede leer la propiedad 'gifts' de undefined."            
+            Papá Noel te proporciona el siguiente código para que lo revises: 
+        </p>
+        <br>
+        <pre>
+        <code>
+function sendGifts(children) {
+    let totalGifts = 0;
+    let successfulSends = 0;
+            
+children.forEach(child => {
+    if (child.behavedWell) {
+        totalGifts += child.gifts.length;
+        console.log(`Enviando ${child.gifts.length} regalos a ${child.name}`);
+        successfulSends++;
+    }
+});
+
+console.log(`Total de regalos enviados: ${totalGifts}`);
+
+console.log(`Confirmaciones enviadas con éxito: ${successfulSends}`);
+
+return { totalGifts, successfulSends };
+}
+            
+let childrenList = [
+    { name: "Carlos", behavedWell: true, gifts: ["tren", "muñeca"] },
+    { name: "Ana", behavedWell: true, gifts: ["libro"] },
+    { name: "Luis", behavedWell: true } 
+];
+            
+sendGifts(childrenList);
+        </code>
+    </pre>
+        <br>
+        <p>
+            ¿Qué le falta al código para que funcione correctamente y no dé errores?
+        </p>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="octavoLink" name="respuesta" required placeholder="Escribe la respuesta" />
+            <button class="btn">Enviar respuesta</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            inicializarDesafio(
+                'formularioDesafio',        
+                'if (child.behavedwell && child.gifts)',                  
+                '¡Reto 8 completado! El próximo reto está a la izquiera de la mesa de trabajo de Papá Noel.' 
+            );
+        });
+    </script>
+</body>
+</html>

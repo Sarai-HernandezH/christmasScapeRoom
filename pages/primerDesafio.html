@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <script defer src="../JS/desafios.js"></script>
+    <title>Detecta el Malware</title>
+</head>
+<body id="body1">
+    <div class="contenedor">
+        <h1>Reto 1: El Malware del Grinch</h1>
+        <p>Cuando entras en el taller, el ordenador de Papá Noel está completamente bloqueado. 
+            En la pantalla aparece un mensaje que dice: "¡ERROR! ¡El sistema ha sido comprometido! El Grinch ha infectado tu red". 
+            El taller está en caos, y los elfos no pueden fabricar más juguetes. Papá Noel está desesperado.
+            En la pantalla del ordenador se muestra una ventana con información críptica sobre el tipo de malware que ha infectado su sistema. 
+            Esta es la descripción que aparece:
+        </p>
+        <br>
+        <p>
+            "Soy un tipo de malware que aprovecho una vulnerabilidad específica en el sistema para obtener acceso no autorizado. 
+            No necesito que el usuario haga clic en ningún enlace ni descargue ningún archivo. 
+            Mi misión es explotar los puntos débiles del sistema para infiltrarme, ejecutar código malicioso y obtener el control de las funciones principales. 
+            Una vez dentro, puedo robar información, alterar configuraciones y dejar el sistema vulnerable a más ataques. 
+            Mi presencia a menudo pasa desapercibida durante mucho tiempo, hasta que la vulnerabilidad se cierra o se descubre."
+        </p>
+        <br>
+        <p>
+            ¿Qué tipo de malware ha utilizado el Grinch para corromper el sistema de Papá Noel y sabotear la fabricación de juguetes?
+        </p>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="primerLink" name="respuesta" required placeholder="Escribe la respuesta" />
+            <button class="btn" >Enviar respuesta</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            inicializarDesafio(
+                'formularioDesafio',        
+                'exploit',                  
+                '¡Reto 1 completado! El próximo reto está detrás del aparato que ayuda a proyectar tu aprendizaje.' 
+            );
+        });
+    </script>
+</body>
+</html>

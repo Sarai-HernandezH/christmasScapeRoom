@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/christmas-classica" rel="stylesheet">
+    <script defer src="../JS/desafios.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgs/sombrero.png">
+    <title>Error en la base de datos</title>
+</head>
+<body id="body6">
+    <div class="contenedor">
+        <h1>Reto 6: Agregar la Regla en la Base de Datos SQL </h1>
+        <p>
+            Paoá Noel por fin ha logrado acceder a su sistema y ha encontrado la tabla donde guarda las direcciones de los niños. 
+            Sin embargo, algo extraño está pasando: las direcciones de algunos niños se han duplicado, y papá noel teme que los regalos puedan ser entregados en el lugar equivocado. <br>
+            Necesita que le ayudes a agregar una restricción que asegure que cada dirección sea única, para que no haya errores al enviar los regalos.
+        </p>
+        <br>
+        <p>
+            Pistas sobre la Base de Datos SQL: <br><br>
+            Estructura de la base de datos: <br>
+            Tabla: niños <br>
+            Columnas:<br>
+            º id (Identificador único del niño) <br>
+            º nombre (Nombre del niño) <br>
+            º direccion (Dirección donde se debe entregar el regalo) <br><br>
+            Comando SQL para agregar la restricción: papá noel recuerda que en su base de datos las direcciones deben ser únicas 
+            para evitar que un niño reciba varios regalos en diferentes direcciones, o que un regalo se entregue en dos casas equivocadas. 
+            Por lo tanto, quiere usar una restricción para garantizar la unicidad de las direcciones en la tabla.
+        </p>
+        <br>
+        <p>
+            ¿Qué comando SQL se debería utilizar para agregar una restricción de unicidad a la columna direccion de la tabla niños?
+        </p>
+        <br>
+        <form action="" class="formularioDesafio">
+            <input type="text" id="cuartoLink" name="respuesta" required placeholder="Escribe la respuesta" />
+            <button class="btn">Enviar respuesta</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.formularioDesafio').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            inicializarDesafio(
+                'formularioDesafio',        
+                'alter table',                  
+                '¡Reto 6 completado! El próximo reto está en el ícono de usuario del cuarto ordenador de iquierda a derecha.' 
+            );
+        });
+    </script>
+</body>
+</html>
